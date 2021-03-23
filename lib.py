@@ -106,6 +106,7 @@ def translate(seq):
 virus_seq = _get_seq('wuhan-sars-cov2-seq.fasta') 
 
 if __name__ == "__main__":
+
     virus_sig = "AUG UUU GUU UUU CUU GUU UUA UUG CCA CUA GUC UCU AGU CAG UGU GUU".replace(" ", "").replace("U", "T")
     vaccine_sig = "AUG UUC GUG UUC CUG GUG CUG CUG CCU CUG GUG UCC AGC CAG UGU GUG".replace(" ", ""). replace("U", "T")
     print(f'Start of Signal Protein mRNA sequence {naive_pattern_match(virus_seq, virus_sig)}')
